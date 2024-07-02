@@ -1,0 +1,23 @@
+Команди за конвертиране на .docx към .md
+
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" --extract-media .\ "05.2024 FTS Cash Book.docx" -o Index-BG.md
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" --extract-media .\ "05.2024 FTS Cash Book ENU.docx" -o Index-ENU.md
+
+
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" --extract-media .\ 05.2024_промени_ENU.docx -o NewIndex-ENU.md
+
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" --extract-media .\ 05.2024_FTS_Bulgarian_Basic_Localization_Package.docx -o NewIndex-BG-FULL.md
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" --extract-media .\ 05.2024_промени.docx -o NewIndex-BG.md
+
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" --extract-media .\  -o example35.md
+
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" example35.md -o example13.pdf
+
+D:\AL\D365BC_CashBook\Sorce>"C:\Program Files\Pandoc\pandoc.exe" -s -o example13.pdf example35.md
+
+pandoc -s -o doc.pdf part01.md
+pandoc input.md -o output.pdf
+
+pandoc MANUAL.txt --pdf-engine=xelatex -o example13.pdf
+
+pandoc --extract-media ./myMediaFolder input.docx -o output.md
